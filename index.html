@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sealbound - A 2D narrative RPG where you restore the world through connection, not sacrifice. Coming soon.">
+    <meta name="keywords" content="Sealbound, RPG, indie game, narrative RPG, turn-based combat, fantasy game">
+    <meta property="og:title" content="Sealbound - Restore the World Through Connection">
+    <meta property="og:description" content="A 2D narrative RPG where ancient Seals respond to genuine emotion. Form bonds, explore dungeons, recover your memories.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#0a0a12">
+    <title>Sealbound | Restore the World Through Connection</title>
+
+    <!-- Favicon - Seal Symbol -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='none' stroke='%239d6bff' stroke-width='4'/><circle cx='50' cy='50' r='30' fill='none' stroke='%239d6bff' stroke-width='2' opacity='0.6'/><circle cx='50' cy='50' r='12' fill='%239d6bff'/></svg>">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">Sealbound</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#world">World</a></li>
+                <li><a href="#gameplay">Gameplay</a></li>
+                <li><a href="#characters">Characters</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#newsletter" class="nav-cta">Stay Updated</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="seal-glow"></div>
+            <div class="particles" id="particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-subtitle">A Narrative RPG Experience</div>
+            <h1 class="hero-title">
+                <span class="title-seal">SEAL</span><span class="title-bound">BOUND</span>
+            </h1>
+            <p class="hero-tagline">Restore the world through connection, not sacrifice</p>
+            <div class="hero-cta">
+                <a href="#newsletter" class="btn btn-primary">
+                    <span>Join the Journey</span>
+                    <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#about" class="btn btn-secondary">Discover More</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">The Game</span>
+                <h2 class="section-title">What is Sealbound?</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-main">
+                    <p class="about-lead">
+                        <strong>Sealbound</strong> is a 2D, narrative-driven, turn-based RPG that weaves together
+                        the dungeon exploration of <em>Pokémon Mystery Dungeon</em> with the relationship-driven
+                        heart of <em>Stardew Valley</em>.
+                    </p>
+                    <p>
+                        You wake at the edge of a quiet village with no memory—only an inexplicable pull toward
+                        ancient Seals that hold the fabric of reality together. As entropy spreads and the world
+                        begins to unravel, you'll discover that these Seals don't want sacrifice. They want
+                        something far more difficult to give: <strong>genuine connection</strong>.
+                    </p>
+                    <p>
+                        Form bonds with the villagers of Hearthwyn. Venture into corrupted dungeons. Recover
+                        fragments of your lost past. And learn that the world was never meant to be carried
+                        by one pair of hands.
+                    </p>
+                </div>
+                <div class="about-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"/>
+                                <path d="M12 7v5l3 3"/>
+                            </svg>
+                        </div>
+                        <h3>Turn-Based Combat</h3>
+                        <p>Strategic battles with skill synergies and party dynamics</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                            </svg>
+                        </div>
+                        <h3>Deep Bonds</h3>
+                        <p>Relationships that shape combat, story, and endings</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                                <line x1="12" y1="22.08" x2="12" y2="12"/>
+                            </svg>
+                        </div>
+                        <h3>Dungeon Exploration</h3>
+                        <p>Seven unique Seals, each with mysteries to uncover</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- World Section -->
+    <section class="section world" id="world">
+        <div class="world-bg"></div>
+        <div class="container">
+            <div class="section-header section-header--light">
+                <span class="section-label">The Lore</span>
+                <h2 class="section-title">A World Held by Memory</h2>
+            </div>
+            <div class="world-content">
+                <div class="lore-card lore-card--seals">
+                    <div class="lore-icon">
+                        <div class="seal-symbol"></div>
+                    </div>
+                    <h3>The Seals</h3>
+                    <p>
+                        Ancient, elemental entities scattered across the land. They maintain the emotional
+                        and physical stability of reality itself—not through power, but through <em>meaning</em>.
+                        They absorb the essence of genuine feeling: love, memory, truth, connection.
+                    </p>
+                    <p class="lore-whisper">
+                        But people forgot. Hollow rituals replaced honest feeling. And the Seals began to wither.
+                    </p>
+                </div>
+                <div class="lore-card lore-card--keepers">
+                    <div class="lore-icon">
+                        <div class="keeper-symbol"></div>
+                    </div>
+                    <h3>The Keepers</h3>
+                    <p>
+                        Some people's emotional resonance becomes attuned to a Seal. They aren't chosen—they
+                        <em>happen</em>. Through deep feeling, living near a Seal, or carrying powerful
+                        unresolved emotion.
+                    </p>
+                    <p class="lore-whisper">
+                        Most never realize what they are. To the world, Keepers are half myth, half warning.
+                    </p>
+                </div>
+                <div class="lore-card lore-card--entropy">
+                    <div class="lore-icon">
+                        <div class="entropy-symbol"></div>
+                    </div>
+                    <h3>The Entropy</h3>
+                    <p>
+                        As the Seals weaken, reality frays at the edges. Strange growths appear. Wildlife
+                        grows disturbed. Emotional echoes bleed through time. Dreams become too vivid,
+                        too real.
+                    </p>
+                    <p class="lore-whisper">
+                        The village of Hearthwyn has begun to notice. Something stirs.
+                    </p>
+                </div>
+            </div>
+            <div class="world-quote">
+                <blockquote>
+                    "The Seals don't want sacrifice—they want love, memory, and truth."
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gameplay Section -->
+    <section class="section gameplay" id="gameplay">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Experience</span>
+                <h2 class="section-title">How You'll Play</h2>
+            </div>
+            <div class="gameplay-loop">
+                <div class="loop-step" data-step="1">
+                    <div class="loop-number">01</div>
+                    <div class="loop-content">
+                        <h3>Explore</h3>
+                        <p>Venture into regions corrupted by entropy. Each of the seven Seals guards a dungeon
+                           filled with puzzles, enemies, and fragments of forgotten memory.</p>
+                    </div>
+                </div>
+                <div class="loop-connector"></div>
+                <div class="loop-step" data-step="2">
+                    <div class="loop-number">02</div>
+                    <div class="loop-content">
+                        <h3>Connect</h3>
+                        <p>Return to Hearthwyn Village. Spend time with its people. Complete their requests.
+                           Fight alongside them. Watch as strangers become friends—and perhaps something more.</p>
+                    </div>
+                </div>
+                <div class="loop-connector"></div>
+                <div class="loop-step" data-step="3">
+                    <div class="loop-number">03</div>
+                    <div class="loop-content">
+                        <h3>Battle</h3>
+                        <p>Engage in strategic turn-based combat with a party of three. Master skill synergies,
+                           exploit enemy weaknesses, and discover how your bonds unlock new abilities.</p>
+                    </div>
+                </div>
+                <div class="loop-connector"></div>
+                <div class="loop-step" data-step="4">
+                    <div class="loop-number">04</div>
+                    <div class="loop-content">
+                        <h3>Remember</h3>
+                        <p>Each Seal stabilized returns a fragment of your past. Piece together who you were,
+                           what happened, and why you alone can feel what the Seals need.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gameplay-details">
+                <div class="detail-card">
+                    <h4>The Bond System</h4>
+                    <div class="bond-levels">
+                        <span class="bond-level">Stranger</span>
+                        <span class="bond-arrow">→</span>
+                        <span class="bond-level">Acquainted</span>
+                        <span class="bond-arrow">→</span>
+                        <span class="bond-level">Friendly</span>
+                        <span class="bond-arrow">→</span>
+                        <span class="bond-level">Kindred</span>
+                        <span class="bond-arrow">→</span>
+                        <span class="bond-level bond-level--special">Bound</span>
+                        <span class="bond-arrow">→</span>
+                        <span class="bond-level bond-level--special">Devoted</span>
+                    </div>
+                    <p>Relationships evolve through shared experiences. High bonds unlock secret quests,
+                       powerful abilities, and shape the story's conclusion.</p>
+                </div>
+                <div class="detail-card">
+                    <h4>Seven Seals, Seven Truths</h4>
+                    <div class="seals-preview">
+                        <div class="seal-pip" data-seal="Hollow Glade"></div>
+                        <div class="seal-pip" data-seal="Stillwater Hollow"></div>
+                        <div class="seal-pip" data-seal="Embercoil Depths"></div>
+                        <div class="seal-pip" data-seal="Whispering Spire"></div>
+                        <div class="seal-pip" data-seal="Shardfall"></div>
+                        <div class="seal-pip" data-seal="Blackroot Sanctum"></div>
+                        <div class="seal-pip" data-seal="Heartroot Nexus"></div>
+                    </div>
+                    <p>From overgrown ruins to crystalline fissures, each Seal guards memories that
+                       will change everything you thought you knew.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Characters Section -->
+    <section class="section characters" id="characters">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">The People</span>
+                <h2 class="section-title">Those Who Wait</h2>
+            </div>
+            <p class="section-intro">
+                The villagers of Hearthwyn each carry their own stories, their own wounds, their own gifts.
+                Your journey will intertwine with theirs.
+            </p>
+
+            <div class="character-showcase">
+                <div class="character-card character-card--featured" data-character="kaela">
+                    <div class="character-portrait">
+                        <div class="portrait-frame">
+                            <div class="portrait-placeholder">
+                                <span class="portrait-initial">K</span>
+                            </div>
+                        </div>
+                        <div class="character-role">Support · Buffer · Healer</div>
+                    </div>
+                    <div class="character-info">
+                        <div class="character-header">
+                            <h3 class="character-name">Kaela</h3>
+                            <span class="character-epithet">"The Soft Cadence"</span>
+                        </div>
+                        <p class="character-desc">
+                            Keeper of the Archive Hall, Kaela restores old village documents with the same
+                            quiet care she brings to everything. Warm and thoughtful, she's polite to everyone
+                            but doesn't seek connection—preferring solitude to crowds.
+                        </p>
+                        <p class="character-desc">
+                            Yet in one-on-one conversation, her sharp wit emerges. There's more beneath the
+                            surface. A dream she's never shared. A design for something that could change
+                            the village forever.
+                        </p>
+                        <div class="character-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Weapon</span>
+                                <span class="detail-value">Violin</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Favorite</span>
+                                <span class="detail-value">Iced Sweet Tea</span>
+                            </div>
+                        </div>
+                        <div class="character-abilities">
+                            <h4>Combat Style</h4>
+                            <p>Kaela empowers allies through protective melodies and tempo control. Her presence
+                               alone bolsters the party, while her ultimate can turn the tide of any battle.</p>
+                            <div class="ability-preview">
+                                <span class="ability-tag">Buffs</span>
+                                <span class="ability-tag">Healing</span>
+                                <span class="ability-tag">Cleanse</span>
+                                <span class="ability-tag">Turn Manipulation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="characters-coming">
+                    <div class="coming-card">
+                        <div class="coming-icon">?</div>
+                        <p>More companions to be revealed...</p>
+                    </div>
+                    <div class="coming-card">
+                        <div class="coming-icon">?</div>
+                        <p>More companions to be revealed...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Section -->
+    <section class="section media" id="media">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Gallery</span>
+                <h2 class="section-title">Glimpses of the World</h2>
+            </div>
+            <div class="media-grid">
+                <div class="media-placeholder media-placeholder--large">
+                    <div class="placeholder-content">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                            <polyline points="21 15 16 10 5 21"/>
+                        </svg>
+                        <span>Concept Art Coming Soon</span>
+                    </div>
+                </div>
+                <div class="media-placeholder">
+                    <div class="placeholder-content">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                            <polyline points="21 15 16 10 5 21"/>
+                        </svg>
+                        <span>Screenshots</span>
+                    </div>
+                </div>
+                <div class="media-placeholder">
+                    <div class="placeholder-content">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                            <polyline points="21 15 16 10 5 21"/>
+                        </svg>
+                        <span>Character Art</span>
+                    </div>
+                </div>
+                <div class="media-placeholder">
+                    <div class="placeholder-content">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polygon points="5 3 19 12 5 21 5 3"/>
+                        </svg>
+                        <span>Gameplay Trailer</span>
+                    </div>
+                </div>
+            </div>
+            <p class="media-note">
+                We're actively developing Sealbound. Follow us to see the world come to life.
+            </p>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section newsletter" id="newsletter">
+        <div class="newsletter-bg">
+            <div class="seal-glow seal-glow--newsletter"></div>
+        </div>
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="section-header section-header--light section-header--center">
+                    <span class="section-label">Stay Connected</span>
+                    <h2 class="section-title">Begin Your Journey</h2>
+                </div>
+                <p class="newsletter-desc">
+                    Join our community for development updates, character reveals, behind-the-scenes content,
+                    and be the first to know when Sealbound becomes available.
+                </p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="form-group">
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                            aria-label="Email address"
+                        >
+                        <button type="submit" class="btn btn-primary">
+                            <span>Subscribe</span>
+                            <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="form-note">No spam, ever. Unsubscribe anytime.</p>
+                </form>
+                <div class="newsletter-success" id="newsletterSuccess" hidden>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                    <p>Thank you for joining us. The journey begins soon.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">Sealbound</span>
+                    <p class="footer-tagline">
+                        "You weren't made just to protect the world.<br>
+                        You were made to live in it."
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigate</h4>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#world">World</a></li>
+                            <li><a href="#gameplay">Gameplay</a></li>
+                            <li><a href="#characters">Characters</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Follow</h4>
+                        <ul>
+                            <li><a href="#" aria-label="Twitter">Twitter / X</a></li>
+                            <li><a href="#" aria-label="Discord">Discord</a></li>
+                            <li><a href="#" aria-label="YouTube">YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sealbound. All rights reserved.</p>
+                <p class="footer-credit">Made with genuine connection</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/content.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
