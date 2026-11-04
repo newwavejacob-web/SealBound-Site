@@ -19,3 +19,10 @@ build/
 # Environment files
 .env
 .env.local
+
+# Godot web export (deployed via rsync, too big for GitHub)
+play/
+web/
+*.zip
+*.wasm
+*.pck
